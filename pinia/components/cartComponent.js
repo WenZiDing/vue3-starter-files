@@ -1,10 +1,10 @@
 export default {
-  data() {
-    return {
-      cartList: []
-    }
-  },
-  template: `<div class="bg-light p-4 my-3">
+    data() {
+        return {
+            cartList: []
+        }
+    },
+    template: `<div class="bg-light p-4 my-3">
     <div>購物車沒有任何品項</div>
     <table class="table align-middle">
       <tbody>

@@ -1,8 +1,8 @@
-const { mapGetters } = Pinia;
+const {mapGetters} = Pinia;
 import cartStore from './cartStore.js';
 
 export default {
-  template: `<nav class="navbar bg-light">
+    template: `<nav class="navbar bg-light">
     <div class="container-fluid">
       <span class="navbar-brand" href="#">香香麵攤</span>
       <div>
@@ -11,7 +11,7 @@ export default {
       </div>
     </div>
   </nav>`,
-  computed: {
-    ...mapGetters(cartStore, ['cartList'])
-  },
+    computed: {
+        ...mapGetters(cartStore, ['cartList'])
+    },
 }

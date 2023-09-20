@@ -1,8 +1,8 @@
-const { mapActions, mapGetters } = Pinia;
+const {mapActions, mapGetters} = Pinia;
 import cartStore from './cartStore.js';
 
 export default {
-  template: `<div class="bg-light p-4 my-3">
+    template: `<div class="bg-light p-4 my-3">
     <div v-if="!cartList.carts.length">購物車沒有任何品項</div>
     <table v-else class="table align-middle">
       <tbody>
@@ -36,10 +36,10 @@ export default {
       </tfoot>
     </table>
   </div>`,
-  computed: {
-    ...mapGetters(cartStore, ['cartList'])
-  },
-  methods: {
-    ...mapActions(cartStore, ['setCartQty', 'removeCartItem'])
-  },
+    computed: {
+        ...mapGetters(cartStore, ['cartList'])
+    },
+    methods: {
+        ...mapActions(cartStore, ['setCartQty', 'removeCartItem'])
+    },
 }
